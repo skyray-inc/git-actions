@@ -17,6 +17,6 @@ export const PR_TITLE = title;
 
 export const CHECK = core.getInput('CHECK', { required: true });
 export const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN', { required: true });
-export const JIRA_HOST_URL = core.getInput('JIRA_HOST_URL', { required: true });
-export const JIRA_PROJECT_NAME = core.getInput('JIRA_PROJECT_NAME', { required: true });
-export const PR_TITLE_REGEX = core.getInput('PR_TITLE_REGEX', { required: true });
+export const JIRA_HOST_URL = core.getInput('JIRA_HOST_URL', { required: false });
+export const JIRA_PROJECT_NAME = core.getInput('JIRA_PROJECT_NAME', { required: false });
+export const PR_TITLE_REGEX = core.getInput('PR_TITLE_REGEX', { required: false });
