@@ -2,14 +2,16 @@ name: LH-git-actions
 description: LogicHub git actions
 
 inputs:
+  CHECK:
+    required: true
   GITHUB_TOKEN:
     required: true
   JIRA_HOST_URL:
-    required: true
+    required: false
   JIRA_PROJECT_NAME:
-    required: true
-  CHECK:
-    required: true
+    required: false
+  PR_TITLE_REGEX:
+    required: false
 
 runs:
   using: 'node16'
