@@ -1,6 +1,6 @@
 {
   "name": "gitactions",
-  "version": "1.0.0",
+  "version": "latest",
   "description": "LogicHub git actions",
   "main": "dist/index.js",
   "scripts": {
