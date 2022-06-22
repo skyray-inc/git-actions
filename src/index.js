@@ -1,6 +1,7 @@
 import * as core from '@actions/core';
 
 import { updatePR } from './actions/update-pr';
+import { addAssignee } from './actions/add-assignee';
 import { checkPR } from './actions/check-pr';
 
 import { CHECK } from './utils/get-inputs';
@@ -15,6 +16,11 @@ function run() {
 
       case 'updatePR': {
         updatePR();
+        break;
+      }
+
+      case 'addAssignee': {
+        addAssignee();
         break;
       }
 
